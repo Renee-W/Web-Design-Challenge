@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Weather Information</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visualization1</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
             <a class="navbar-brand" href="#">Latitude</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -27,6 +28,7 @@
                     Plots
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="index.html">Home</a>
                     <a class="dropdown-item" href="vis1.html">vs. Tempreture</a>
                     <a class="dropdown-item" href="vis2.html">vs. Humidity</a>
                     <a class="dropdown-item" href="vis3.html">vs. Cloudiness</a>
@@ -40,45 +42,19 @@
             </div>
           </nav>
         <div class ='container'>
-          <h1 class='display-4'>Summary
+          <h1 class='display-4'>Lattitude vs. Wind Speed
           </h1>
         </div>
         <div class='container'>
           <div class='row'>
-            <div class='col-md-8'>
-            <div class='box skyblue'>
+            <div class='col-md-12 col-lg-12'>
               <h3>
                 <div class='text-wrap'>
-                  <img  src='images\Fig1.png' class='image' style='float:left' title = 'Lattitude vs. Temreture'
-                  width=240, hight=324> 
-                   <p>The purpose of this project is to analyze how weather changes as 
-                    you get closer to the equator.  To accomplish this analysis, we 
-                    first pulled data from the OpenWeatherMap API to assemble a dataset 
-                    on over 500 cities.
-
-                    After assembling the dataset, we used Matplotlib to plot various 
-                    aspects of the weather vs. latitude.  Factors we looked at included: 
-                    temperature, cloudiness, wind speed, and humidity.</p>
+                 <img  src='images\Fig4.png' class='image img-responsive' title = 'Lattitude vs. Wind Speed'> 
+                   <p>Lattitude vs. Wind Speed</p>
                 </div>
               </h3>
-            </div>
-            </div>
-            <div class='col-md-4 col-lg-4'>
-              <h3>
-                Visulaizations
-              </h3>
-              <h3>
-                <img  src='images\Fig1.png' class='image' title = 'Lattitude vs. Tempreture'
-                width=120, hight=162>
-                <img  src='images\Fig2.png' class='image' title = 'Lattitude vs. Temreture'
-                width=120, hight=162>
-                <img  src='images\Fig3.png' class='image' title = 'Lattitude vs. Temreture'
-                width=120, hight=162>
-                <img  src='images\Fig4.png' class='image' title = 'Lattitude vs. Temreture'
-                width=120, hight=162>
-              </h3>
-            </div>
-          </div>
+         </div>
         </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
