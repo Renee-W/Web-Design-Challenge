@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Visualization1</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>WindSpeed</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Latitude</a>
+
+            <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,7 +20,10 @@
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="comp.html">Comparison</a>
+                </li>
+                <li>
+                  <a class='nav-link' href='table.html'>Data</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -29,32 +31,58 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="index.html">Home</a>
-                    <a class="dropdown-item" href="vis1.html">vs. Tempreture</a>
+                    <a class="dropdown-item" href="vis1.html">vs. Temperature</a>
                     <a class="dropdown-item" href="vis2.html">vs. Humidity</a>
                     <a class="dropdown-item" href="vis3.html">vs. Cloudiness</a>
                     <a class="dropdown-item" href="vis4.html">vs. Wind Speed</a>
                   </div>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
               </ul>
             </div>
           </nav>
-        <div class ='container'>
-          <h1 class='display-4'>Lattitude vs. Wind Speed
-          </h1>
-        </div>
         <div class='container'>
           <div class='row'>
-            <div class='col-md-12 col-lg-12'>
+            <div class='col-md-8'>
+              <div class='box skyblue'>
+                <header class='header'>
+                  <h1>Latitude vs. Wind Speed</h1>
+                </header>
+                <h2>
+                  <div class='text'>
+                    <img  src='images\Fig4.png' class='col-md-12 img-responsive' title = 'Lattitude vs. Wind Speed'>
+                    <p>If you compare lattitude to wind speed, it is difficult to determine if the distance from 
+                      the equator (0 latitude) really impacts wind speed.  It does appear that there is very
+                      high wind in the northern hemisphere at high latitude (above 40 latitude) but this could be
+                      be related to the time the information was gathered.  
+                    </p>
+                  </div>
+                </h2>
+              </div>
+            </div>
+            <div class='col-md-4 col-lg-4'>
+              <header class='header3'>
+                <h3> Visulaizations</h3>
+              </header>
               <h3>
-                <div class='text-wrap'>
-                 <img  src='images\Fig4.png' class='image img-responsive' title = 'Lattitude vs. Wind Speed'> 
-                   <p>Lattitude vs. Wind Speed</p>
-                </div>
+                 <a href='vis1.html'>
+                    <img  src='images\Fig1.png' class='image' title = 'Lattitude vs. Temperature' 
+                    width=170, hight=229.5>
+                 </a>
+                 <a href='vis2.html'>
+                    <img  src='images\Fig2.png' class='image' title = 'Lattitude vs. Humidity'
+                    width=170, hight=229.5>
+                 </a>
+                 <a href='vis3.html'>
+                    <img  src='images\Fig3.png' class='image' title = 'Lattitude vs. Cloudiness'
+                    width=170, hight=229.5>
+                 </a>
+                 <a href='vis4.html'>
+                    <img  src='images\Fig4.png' class='image' title = 'Lattitude vs. Wind Speed'
+                    width=170, hight=229.5>
+                 </a>
               </h3>
-         </div>
+            </div>
+          </div>
         </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

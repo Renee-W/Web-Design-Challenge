@@ -9,7 +9,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-            <a class="navbar-brand" href="#">Latitude</a>
+            <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,21 +20,21 @@
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="comp.html">Comparison</a>
+                </li>
+                <li>
+                  <a class='nav-link' href='table.html'>Data</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Plots
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="vis1.html">vs. Tempreture</a>
+                    <a class="dropdown-item" href="vis1.html">vs. Temperature</a>
                     <a class="dropdown-item" href="vis2.html">vs. Humidity</a>
                     <a class="dropdown-item" href="vis3.html">vs. Cloudiness</a>
                     <a class="dropdown-item" href="vis4.html">vs. Wind Speed</a>
                   </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
               </ul>
             </div>
@@ -48,16 +48,23 @@
               </header>
               <h2>
                 <div class='text-wrap'>
-                  <img  src='images\Fig1.png' class='image' style='float:left' title = 'Lattitude vs. Temreture'
+                  <img  src='images\Fig1.png' class='image' style='float:left' title = 'Lattitude vs. Temperature'
                   width=360, hight=486> 
                    <p>The purpose of this project is to analyze how weather changes as 
                     you get closer to the equator.  To accomplish this analysis, we 
                     first pulled data from the OpenWeatherMap API to assemble a dataset 
                     on over 500 cities.
 
+
                     After assembling the dataset, we used Matplotlib to plot various 
                     aspects of the weather vs. latitude.  Factors we looked at included: 
-                    temperature, cloudiness, wind speed, and humidity.</p>
+                    temperature, cloudiness, wind speed, and humidity.
+                    
+
+                    Although some of the data may vary if another date was selected, for the most part
+                    all of the graphs would remain similar.
+                  
+                  </p>
                 </div>
               </h2>
             </div>
@@ -67,14 +74,22 @@
                 <h3> Visulaizations</h3>
               </header>
               <h3>
-                <img  src='images\Fig1.png' class='image' title = 'Lattitude vs. Tempreture'
-                width=170, hight=229.5>
-                <img  src='images\Fig2.png' class='image' title = 'Lattitude vs. Humidity'
-                width=170, hight=229.5>
-                <img  src='images\Fig3.png' class='image' title = 'Lattitude vs. Cloudiness'
-                width=170, hight=229.5>
-                <img  src='images\Fig4.png' class='image' title = 'Lattitude vs. Wind Speed'
-                width=170, hight=229.5>
+                 <a href='vis1.html'>
+                    <img  src='images\Fig1.png' class='image' title = 'Lattitude vs. Temperature' 
+                    width=170, hight=229.5>
+                 </a>
+                 <a href='vis2.html'>
+                    <img  src='images\Fig2.png' class='image' title = 'Lattitude vs. Humidity'
+                    width=170, hight=229.5>
+                 </a>
+                 <a href='vis3.html'>
+                    <img  src='images\Fig3.png' class='image' title = 'Lattitude vs. Cloudiness'
+                    width=170, hight=229.5>
+                 </a>
+                 <a href='vis4.html'>
+                    <img  src='images\Fig4.png' class='image' title = 'Lattitude vs. Wind Speed'
+                    width=170, hight=229.5>
+                 </a>
               </h3>
             </div>
           </div>
